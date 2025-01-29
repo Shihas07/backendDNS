@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL, // Use environment variable for the client URL
+    origin:" https://dns-ui.vercel.app", // Use environment variable for the client URL
     methods: ["GET", "POST", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
